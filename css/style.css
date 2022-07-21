@@ -149,6 +149,7 @@ header a:hover{
     color: #900;
 }
 
+
 /*INICIO*/
 #hero{
     grid-area: hero;
@@ -410,7 +411,32 @@ footer a{
         padding: 15px;
         margin: 30px;
         border-radius: 15px;
+        cursor: pointer;
+        transition: all 400ms ease;
+        overflow: hidden;
+        position: relative;
 
+    }
+    #personajes .carta1::before{
+        content: "Es un antiguo mercenario marcado que viaja por el mundo en una lucha interna constante entre perseguir su venganza y proteger a sus seres queridos.";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #05021671;
+        transform: translate(100%);
+        transition: transform .4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #personajes .carta1:hover{
+        box-shadow: 5px 5px 20px red;
+        transform: translateY(-3%);
+    }
+    #personajes .carta1:hover::before{
+        transform: translate(0);
     }
 
     #personajes .carta2{
@@ -419,8 +445,34 @@ footer a{
         grid-area: carta2;
         padding: 15px;
         margin: 30px;
-        border-radius: 15px;    
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 400ms ease;
+        overflow: hidden;
+        position: relative;   
     }
+    #personajes .carta2::before{
+        content: " Es uno de los personajes principales y el principal antagonista del manga Berserk. Es un personaje de apariencia pulcra y andrógina que antiguamente era el líder de la Banda del Halcón, la banda de mercenarios a la que pertenecía Guts.";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #05021671;
+        transform: translate(100%);
+        transition: transform .4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #personajes .carta2:hover{
+        box-shadow: 5px 5px 20px red;
+        transform: translateY(-3%);
+    }
+    #personajes .carta2:hover::before{
+        transform: translate(0);
+    }
+
     #personajes .carta3{
         width: 300px;
         height: 400px;
@@ -428,6 +480,31 @@ footer a{
         padding: 15px;
         margin: 30px;
         border-radius: 15px;
+        cursor: pointer;
+        transition: all 400ms ease;
+        overflow: hidden;
+        position: relative; 
+    }
+    #personajes .carta3::before{
+        content: " Casca es presentada como una guerrera de carácter fuerte y serio, con total devoción a Griffith. Su lealtad hacia él le hizo querer servirle como su espada en la búsqueda de su sueño.";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #05021671;
+        transform: translate(100%);
+        transition: transform .4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #personajes .carta3:hover{
+        box-shadow: 5px 5px 20px red;
+        transform: translateY(-3%);
+    }
+    #personajes .carta3:hover::before{
+        transform: translate(0);
     }
     .formulario{
     padding: 150px;
