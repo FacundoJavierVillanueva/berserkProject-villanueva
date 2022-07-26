@@ -89,6 +89,10 @@ img{
     top: 0;
 }
 
+.flexbutton{
+    display: flex;
+    justify-content: center;
+}
 .button{
     text-decoration: none;
     font-size: 1.5em;
