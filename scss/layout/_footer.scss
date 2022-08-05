@@ -1,0 +1,34 @@
+footer {
+	grid-area: footer;
+	background-color: rgb(245, 245, 245);
+	padding: 20px;
+	ul {
+		display: flex;
+	}
+	a {
+		flex-direction: row;
+		justify-content: space-between;
+		text-decoration: none;
+	}
+}
+.logoRed1 {
+	grid-area: logoRed1;
+	padding: 15px;
+	border-radius: 15px;
+	width: 100px;
+	height: 83px;
+}
+.logoRed2 {
+	grid-area: logoRed2;
+	padding: 15px;
+	border-radius: 15px;
+	width: 100px;
+	height: 83px;
+}
+.logoRed3 {
+	grid-area: logoRed3;
+	padding: 15px;
+	border-radius: 15px;
+	width: 100px;
+	height: 83px;
+}

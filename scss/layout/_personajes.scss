@@ -1,0 +1,248 @@
+.bigcontainerPersonajes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas: "header header header" "personajes personajes personajes" "carta1 carta1 carta1" "carta2 carta2 carta2" "carta3 carta3 carta3" "footer footer footer" "logoRed1 logoRed2 logoRed3";
+}
+
+#personajes {
+	grid-area: personajes;
+	background-color: rgb(30, 30, 30);
+	color: white;
+	text-align: center;
+	.container {
+		background-position: center center;
+		background-size: cover;
+		padding: 50px 0;
+	}
+	p {
+		display: none;
+	}
+	h2 {
+		margin-top: 0;
+	}
+
+}
+.carta1 {
+	margin: 10px;
+	grid-area: carta1;
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("../img/Guts.jpg");
+	position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 400ms ease;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	&::before {
+		content: "Es un antiguo mercenario marcado que viaja por el mundo en una lucha interna constante entre perseguir su venganza y proteger a sus seres queridos.";
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #05021671;
+		transform: translate(100%);
+		transition: transform .4s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&:hover {
+		box-shadow: 5px 5px 20px red;
+		transform: translateY(-3%);
+		&::before {
+			transform: translate(0);
+		}
+	}
+}
+.carta2 {
+	margin: 10px;
+	grid-area: carta2;
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("../img/Griffith.jpg");
+	position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 400ms ease;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	&::before {
+		content: " Es uno de los personajes principales y el principal antagonista del manga Berserk. Es un personaje de apariencia pulcra y andrógina que antiguamente era el líder de la Banda del Halcón, la banda de mercenarios a la que pertenecía Guts.";
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #05021671;
+		transform: translate(100%);
+		transition: transform .4s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&:hover {
+		box-shadow: 5px 5px 20px red;
+		transform: translateY(-3%);
+		&::before {
+			transform: translate(0);
+		}
+	}
+}
+.carta3 {
+	margin: 10px;
+	grid-area: carta3;
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("../img/Casca.jpg");
+	position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 400ms ease;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	&::before {
+		content: " Casca es presentada como una guerrera de carácter fuerte y serio, con total devoción a Griffith. Su lealtad hacia él le hizo querer servirle como su espada en la búsqueda de su sueño.";
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #05021671;
+		transform: translate(100%);
+		transition: transform .4s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&:hover {
+		box-shadow: 5px 5px 20px red;
+		transform: translateY(-3%);
+		&::before {
+			transform: translate(0);
+		}
+	}
+}
+
+
+@media (min-width: 1024px) {
+	.bigcontainerPersonajes {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "header header header" "personajes personajes personajes" "carta1 carta2 carta3" "footer footer footer" "logoRed1 logoRed2 logoRed3";
+	}
+	#personajes
+		ul {
+			display: flex;
+			justify-content: center;
+		}
+		h3 {
+			margin-top: 0;
+		}
+		p {
+			display: block;
+			margin-bottom: 30px;
+		}
+		.carta1 {
+			width: 300px;
+			height: 400px;
+			grid-area: carta1;
+			padding: 15px;
+			margin: 30px;
+			border-radius: 15px;
+			cursor: pointer;
+			transition: all 400ms ease;
+			overflow: hidden;
+			position: relative;
+			&::before {
+				content: "Es un antiguo mercenario marcado que viaja por el mundo en una lucha interna constante entre perseguir su venganza y proteger a sus seres queridos.";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: #05021671;
+				transform: translate(100%);
+				transition: transform .4s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			&:hover {
+				box-shadow: 5px 5px 20px red;
+				transform: translateY(-3%);
+				&::before {
+					transform: translate(0);
+				}
+			}
+		}
+		.carta2 {
+			width: 300px;
+			height: 400px;
+			grid-area: carta2;
+			padding: 15px;
+			margin: 30px;
+			border-radius: 15px;
+			cursor: pointer;
+			transition: all 400ms ease;
+			overflow: hidden;
+			position: relative;
+			&::before {
+				content: " Es uno de los personajes principales y el principal antagonista del manga Berserk. Es un personaje de apariencia pulcra y andrógina que antiguamente era el líder de la Banda del Halcón, la banda de mercenarios a la que pertenecía Guts.";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: #05021671;
+				transform: translate(100%);
+				transition: transform .4s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			&:hover {
+				box-shadow: 5px 5px 20px red;
+				transform: translateY(-3%);
+				&::before {
+					transform: translate(0);
+				}
+			}
+		}
+		.carta3 {
+			width: 300px;
+			height: 400px;
+			grid-area: carta3;
+			padding: 15px;
+			margin: 30px;
+			border-radius: 15px;
+			cursor: pointer;
+			transition: all 400ms ease;
+			overflow: hidden;
+			position: relative;
+			&::before {
+				content: " Casca es presentada como una guerrera de carácter fuerte y serio, con total devoción a Griffith. Su lealtad hacia él le hizo querer servirle como su espada en la búsqueda de su sueño.";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: #05021671;
+				transform: translate(100%);
+				transition: transform .4s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			&:hover {
+				box-shadow: 5px 5px 20px red;
+				transform: translateY(-3%);
+				&::before {
+					transform: translate(0);
+				}
+			}
+		}
+	}

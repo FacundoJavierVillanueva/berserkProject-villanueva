@@ -1,0 +1,22 @@
+
+.bigcontainerContacto {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header header header" "contactoMain contactoMain contactoMain" "footer footer footer" "logoRed1 logoRed2 logoRed3";
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px;
+}
+@media (min-width: 1024px) {
+    .formulario {
+		padding: 150px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
