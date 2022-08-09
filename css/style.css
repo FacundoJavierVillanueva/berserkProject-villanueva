@@ -465,28 +465,23 @@ footer a {
   text-decoration: none;
 }
 
-.logoRed1 {
-  grid-area: logoRed1;
+.logoRed0, .logoRed3, .logoRed2, .logoRed1 {
   padding: 15px;
   border-radius: 15px;
   width: 100px;
   height: 83px;
+}
+
+.logoRed1 {
+  grid-area: logoRed1;
 }
 
 .logoRed2 {
   grid-area: logoRed2;
-  padding: 15px;
-  border-radius: 15px;
-  width: 100px;
-  height: 83px;
 }
 
 .logoRed3 {
   grid-area: logoRed3;
-  padding: 15px;
-  border-radius: 15px;
-  width: 100px;
-  height: 83px;
 }
 
 img {
@@ -496,8 +491,8 @@ img {
 
 .logo {
   display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
 }
 
 .logotipo {
@@ -509,6 +504,7 @@ img {
 .flexbutton {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .button {

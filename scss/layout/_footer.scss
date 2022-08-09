@@ -11,24 +11,21 @@ footer {
 		text-decoration: none;
 	}
 }
-.logoRed1 {
-	grid-area: logoRed1;
+.logoRed0{
 	padding: 15px;
 	border-radius: 15px;
 	width: 100px;
 	height: 83px;
+}
+.logoRed1 {
+	grid-area: logoRed1;
+	@extend .logoRed0
 }
 .logoRed2 {
 	grid-area: logoRed2;
-	padding: 15px;
-	border-radius: 15px;
-	width: 100px;
-	height: 83px;
+	@extend .logoRed0
 }
 .logoRed3 {
 	grid-area: logoRed3;
-	padding: 15px;
-	border-radius: 15px;
-	width: 100px;
-	height: 83px;
+	@extend .logoRed0
 }
