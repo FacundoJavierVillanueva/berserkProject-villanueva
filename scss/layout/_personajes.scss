@@ -23,8 +23,15 @@
 	}
 
 }
+.widhtCARD{
+	width: 300px;
+			height: 400px;
+			padding: 50px;
+	margin: auto;
+	margin-top: 10px;
+}
 .carta1 {
-	margin: 10px;
+	@extend .widhtCARD;
 	grid-area: carta1;
 	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("../img/Guts.jpg");
 	position: center center;
@@ -43,8 +50,6 @@
 		left: 0;
 		right: 0;
 		background-color: #05021671;
-		transform: translate(100%);
-		transition: transform .4s;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -58,7 +63,7 @@
 	}
 }
 .carta2 {
-	margin: 10px;
+	@extend .widhtCARD;
 	grid-area: carta2;
 	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("../img/Griffith.jpg");
 	position: center center;
@@ -77,8 +82,6 @@
 		left: 0;
 		right: 0;
 		background-color: #05021671;
-		transform: translate(100%);
-		transition: transform .4s;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -92,7 +95,7 @@
 	}
 }
 .carta3 {
-	margin: 10px;
+	@extend .widhtCARD;
 	grid-area: carta3;
 	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("../img/Casca.jpg");
 	position: center center;
@@ -111,8 +114,6 @@
 		left: 0;
 		right: 0;
 		background-color: #05021671;
-		transform: translate(100%);
-		transition: transform .4s;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -147,10 +148,8 @@
 			margin-bottom: 30px;
 		}
 		.carta1 {
-			width: 300px;
-			height: 400px;
+			@extend .widhtCARD;
 			grid-area: carta1;
-			padding: 15px;
 			margin: 30px;
 			border-radius: 15px;
 			cursor: pointer;
@@ -180,10 +179,8 @@
 			}
 		}
 		.carta2 {
-			width: 300px;
-			height: 400px;
+			@extend .widhtCARD;
 			grid-area: carta2;
-			padding: 15px;
 			margin: 30px;
 			border-radius: 15px;
 			cursor: pointer;
@@ -213,10 +210,8 @@
 			}
 		}
 		.carta3 {
-			width: 300px;
-			height: 400px;
+			@extend .widhtCARD;
 			grid-area: carta3;
-			padding: 15px;
 			margin: 30px;
 			border-radius: 15px;
 			cursor: pointer;

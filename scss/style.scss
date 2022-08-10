@@ -72,8 +72,9 @@ img {
 }
 header {
 	grid-area: header;
-	background-color: rgb(245, 245, 245);
+	background-color:rgb(2, 0, 0);
 	padding: 20px;
+	color: #900;
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -96,11 +97,15 @@ header {
 	}
 }
 header.logo {
+	border-radius: 20px;
 	margin: 0;
 	padding: 25px 30px;
 	font-weight: bold;
-	color: black;
+	color:#900;
 	font-size: 1.6em;
+}
+.logotipo{
+	border-radius: 20px;
 }
 
 

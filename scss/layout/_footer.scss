@@ -1,31 +1,63 @@
-footer {
+/*:::::Pie de Pagina*/
+.pie-pagina {
 	grid-area: footer;
-	background-color: rgb(245, 245, 245);
-	padding: 20px;
-	ul {
-		display: flex;
+	width: 100%;
+	background-color: rgb(2, 0, 0);
+	.grupo-1 {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+		padding: 45px 0px;
+		.box {
+			figure {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 250px;
+				}
+			}
+			h2 {
+				color: #fff;
+				margin-bottom: 25px;
+				font-size: 20px;
+			}
+			p {
+				color: #efefef;
+				margin-bottom: 10px;
+			}
+		}
+		.red-social {
+			a {
+				display: inline-block;
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				color: #fff;
+				margin-right: 10px;
+				background-color: #0d2033;
+				text-align: center;
+				transition: all 300ms ease;
+				&:hover {
+					color: aqua;
+				}
+			}
+		}
 	}
-	a {
-		flex-direction: row;
-		justify-content: space-between;
-		text-decoration: none;
+	.grupo-2 {
+		background-color: #0a1a2a;
+		padding: 15px 10px;
+		text-align: center;
+		color: #fff;
+		small {
+			font-size: 15px;
+		}
 	}
 }
-.logoRed0{
-	padding: 15px;
-	border-radius: 15px;
-	width: 100px;
-	height: 83px;
-}
-.logoRed1 {
-	grid-area: logoRed1;
-	@extend .logoRed0
-}
-.logoRed2 {
-	grid-area: logoRed2;
-	@extend .logoRed0
-}
-.logoRed3 {
-	grid-area: logoRed3;
-	@extend .logoRed0
-}
+
