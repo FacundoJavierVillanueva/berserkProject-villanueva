@@ -1,3 +1,4 @@
+@media (max-width: 992px){
 .bigcontainerPersonajes {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -126,14 +127,21 @@
 		}
 	}
 }
+}
 
-
-@media (min-width: 1024px) {
+@media (min-width: 992px){
 	.bigcontainerPersonajes {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(4, auto);
 		grid-template-areas: "header header header" "personajes personajes personajes" "carta1 carta2 carta3" "footer footer footer" "logoRed1 logoRed2 logoRed3";
+	}
+	.widhtCARDDESKTOP{
+		width: 300px;
+				height: 400px;
+				padding: 50px;
+		margin: auto;
+		margin-top: 10px;
 	}
 	#personajes
 		ul {
@@ -148,7 +156,7 @@
 			margin-bottom: 30px;
 		}
 		.carta1 {
-			@extend .widhtCARD;
+			@extend .widhtCARDDESKTOP;
 			grid-area: carta1;
 			margin: 30px;
 			border-radius: 15px;
@@ -179,7 +187,7 @@
 			}
 		}
 		.carta2 {
-			@extend .widhtCARD;
+			@extend .widhtCARDDESKTOP;
 			grid-area: carta2;
 			margin: 30px;
 			border-radius: 15px;
@@ -210,7 +218,7 @@
 			}
 		}
 		.carta3 {
-			@extend .widhtCARD;
+			@extend .widhtCARDDESKTOP;
 			grid-area: carta3;
 			margin: 30px;
 			border-radius: 15px;
