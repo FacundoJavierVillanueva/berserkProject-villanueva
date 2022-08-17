@@ -43,6 +43,7 @@ body {
 #hero {
   grid-area: hero;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -95,10 +96,11 @@ body {
   padding: 50px;
 }
 
-.contactoMain {
-  grid-area: contactoMain;
-  background-color: #222;
-  color: white;
+.formTitle {
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  background-color: black;
 }
 
 .form-register {
@@ -148,6 +150,12 @@ body {
   border: 1px solid #1f53c5;
   font-family: "calibri";
   font-size: 18px;
+  color: white;
+}
+
+.contactoMain {
+  grid-area: contactoMain;
+  background-color: #222;
   color: white;
 }
 
